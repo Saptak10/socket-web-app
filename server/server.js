@@ -44,7 +44,7 @@ io.on("connection", socket => {  // connection event which runs everytime a clie
     })
 
     // offline/online
-    socket.on("ping", n => console.log(n))   //receives the ping event and prints the count value
+    socket.on("ping", n => console.log(n))   //receives the ping event when connection open and prints the count value
 })
 
 instrument(io, { auth : false })    //user authentication check
